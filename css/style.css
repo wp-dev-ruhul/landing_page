@@ -1,0 +1,731 @@
+/* Google Font css link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+/* Google Font css link */
+/* Root color and font family */
+:root {
+    --oswald-font: "Oswald", sans-serif;
+    --openSans-font: "Open Sans", sans-serif;
+    --btn-bg: #0872b9;
+    --primary-color: #353535;
+    --Secondary-color: #ffffff;
+}
+
+/* Root color and font family */
+/* basic css desing file */
+/* Target all browsers */
+input[type=number] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+    -webkit-appearance: none;
+    /* For Chrome, Safari, Edge */
+    appearance: none;
+    /* For modern browsers */
+}
+
+/* Optional: Hide the up/down arrows in WebKit-based browsers (like Chrome) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span,
+table,
+footer,
+nav,
+div,
+section {
+    padding: 0;
+    margin: 0;
+}
+
+/* basic css style desing ended */
+/* Header top css part started */
+.header_top_main {
+    width: 100%;
+    background-color: var(--btn-bg);
+    padding: 8px 0px;
+}
+
+.header_top_main p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: var(--openSans-font);
+    color: var(--Secondary-color);
+}
+
+.header_right ul li a {
+    padding: 0 12.5px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: var(--openSans-font);
+    color: var(--Secondary-color);
+}
+
+.header_right ul li a:hover {
+    color: var(--primary-color)
+}
+
+@media screen and (max-width:320px) {
+    .header_right ul li a {
+        padding: 0px 7px;
+    }
+}
+
+@media screen and (min-width:320px) {
+    .header_right ul li a {
+        padding: 0px 9px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .header_right ul li a {
+        padding: 0px 9px;
+    }
+}
+
+/* Header top css part ended */
+
+/* nav-bar desing css part start */
+.nav_main {
+    padding: 25px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: var(--openSans-font);
+    color: var(--primary-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(--btn-bg);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* nav-bar desing css part end */
+/* banner section css part desing start */
+.banner_main {
+    width: 100%;
+    padding: 100px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../image/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner_main .banner_content {
+    text-align: right;
+    color: var(--Secondary-color);
+    text-transform: uppercase;
+}
+
+.banner_main .banner_content h4 {
+    font-family: var(--oswald-font);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.banner_main .banner_content h1 {
+    font-family: var(--oswald-font);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.banner_main .banner_content p {
+    font-family: var(--openSans-font);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Secondary-color);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.banner_main .banner_content a {
+    font-family: var(--oswald-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px 30px;
+    color: #ffffff;
+    border: 2px solid white;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.banner_main .banner_content a:hover {
+    background-color: var(--btn-bg);
+    color: var(--Secondary-color);
+    border: 2px solid #ffffff;
+    transition: all linear 0.3s;
+}
+
+@media screen and (max-width:500px) {
+    .banner_main {
+        width: 100%;
+        padding: 30px 0px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(../image/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner_main .banner_content {
+        text-align: left;
+    }
+
+    .banner_main .banner_content h4 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .banner_main .banner_content h1 {
+        font-family: var(--oswald-font);
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .banner_main .banner_content p {
+        font-size: 11px;
+        text-transform: capitalize;
+    }
+
+    .banner_main .banner_content a {
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 15px;
+        padding: 5px 20px;
+    }
+}
+
+/* banner section css part desing Ended */
+.page_title {
+    padding: 70px 0px;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+
+.page_title h1 {
+    font-family: var(--oswald-font);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--primary-color);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.page_title h1::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: var(--btn-bg);
+    border-radius: 1px;
+}
+
+.about_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.about_main p {
+    font-family: var(--openSans-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:500px) {
+
+    .page_title {
+        text-align: center;
+        padding: 30px 0px;
+
+    }
+
+    .page_title h1::after {
+        left: 50px;
+        bottom: 0px;
+
+    }
+}
+
+/* about content css part started */
+.about_content p {
+    font-family: var(--openSans-font);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: var(--primary-color);
+
+}
+
+.about_content p.p_margin {
+    margin-top: 30px;
+}
+
+@media screen and (max-width:500px) {
+
+    .about_content p {
+        text-align: justify;
+        margin-top: 15px;
+    }
+
+    .about_content p.p_margin {
+        margin-top: 15px;
+
+    }
+}
+
+/* about content css part Ended */
+/* about section css desing End */
+/* service section css part start */
+@media screen and (max-width:500px) {
+
+    .page_title {
+        text-align: center;
+        padding: 30px 0px;
+
+    }
+
+    .service_page_title h1::after {
+        left: 32px;
+        bottom: 0px;
+
+    }
+}
+
+/* service content section css part start */
+
+.service_content {
+    padding: 20px 15px;
+    background-color: #f1f1f1;
+    text-align: center;
+    transition: all linear 0.3s;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.service_content:hover {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.service_content:hover .service_icon {
+    background-color: #5bc5f4;
+    transition: all linear 0.3s;
+    border: 1px solid #ffffff;
+}
+
+.service_content .service_icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: -60px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    outline: 5px solid var(--Secondary-color);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.service_content h1 {
+    font-family: var(--oswald-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--primary-color);
+}
+
+.service_content p {
+    font-family: var(--openSans-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+/* service content section css part End */
+/* service section css part End */
+
+/* Protfolio section css part start */
+@media screen and (max-width:500px) {
+
+    .page_title {
+        text-align: center;
+        padding: 30px 0px;
+
+    }
+
+    .Portfolio_page_title h1::after {
+        left: 26px;
+        bottom: 0px;
+
+    }
+}
+
+/* protfolio section content css part started */
+.p_t {
+    width: 100%;
+    position: relative;
+}
+
+.p_t:hover .p_t_icon {
+
+    transform: scale(1);
+    transition: all linear 0.3s;
+
+}
+
+.p_t_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+    transform: scale(0);
+
+}
+
+.p_t_icon i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5bc5f4;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* protfolio section content css part Ended */
+
+/* Protfolio section css part End */
+
+/* our team section css start */
+.team_content {
+    text-align: center;
+
+}
+
+.team_content .team_top {
+    position: relative;
+    width: 100%;
+    transition: all linear 0.3s
+}
+
+.team_content .team_top:hover {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.team_content .team_top img {
+    width: 100%;
+}
+
+.team_content .team_top:hover .team_icon {
+    width: 100px;
+}
+
+.team_content .team_top:hover .team_icon ul li {
+    display: block;
+}
+
+.team_content .team_top .team_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 00px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s
+}
+
+.team_content .team_top .team_icon ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--Secondary-color);
+    margin: 10px 0px;
+    cursor: pointer;
+    display: none;
+}
+
+.team_content .team_top .team_icon ul li:hover {
+    background-color: #5bc5f4;
+    border: 1px solid #5bc5f4;
+}
+
+.team_content .team_top .team_icon ul li a {
+
+    font-size: 18px;
+    line-height: 40px;
+    color: var(--Secondary-color);
+}
+
+.team_content h1 {
+    font-family: var(--oswald-font);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.team_content h1:hover {
+    color: var(--btn-bg);
+}
+
+.team_content p {
+    font-family: var(--openSans-font);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:500px) {
+
+    .team_content {
+        margin-bottom: 20px;
+    }
+
+    .team_content .team_top .team_icon ul li {
+
+        margin: 25px 0px;
+    }
+}
+
+/* our team section css End */
+/* testimonials section css part start */
+@media screen and (max-width:500px) {
+
+    .testimonial_title h1::after {
+        left: 40px;
+        bottom: 0px;
+
+    }
+
+    .testimonials_content {
+        margin-bottom: 25px;
+    }
+}
+
+.testimonials_content {
+    text-align: center;
+
+}
+
+.testimonial_bottom {
+    border-radius: 8px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.testimonial_top {
+    padding: 30px 0px;
+
+}
+
+.testimonial_bottom {
+    width: 100%;
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 20px 10px;
+    margin: 20px 0px;
+
+}
+
+.testimonial_bottom::after {
+
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.testimonial_bottom h1 {
+
+    font-family: var(--oswald-font);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.testimonial_bottom ul li {
+    display: inline-block;
+    padding: 7px 1px;
+    color: #5bc5f4;
+    font-size: 14px;
+}
+
+.testimonial_bottom h2 {
+    font-family: var(--oswald-font);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.testimonial_bottom p {
+    font-family: var(--oswald-font);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+/* testimonials section css part End */
+/* footer section css design start */
+footer .footer_main {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px 0px;
+}
+.footer_content p {
+    font-family: var(--openSans-font);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--Secondary-color);
+    margin-top: 20px;
+}
+.footer_content h1 {
+    font-family: var(--oswald-font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--Secondary-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer_contact .footer_left i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #5bc5f4;
+    font-size: 13px;
+    line-height: 30px;
+    color: var(--Secondary-color);
+
+}
+.footer_contact .footer_right ul li {
+    display: block;
+}
+.footer_contact .footer_right ul li a {
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--Secondary-color);
+}
+.footer_content .nav_bottom li {
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+}
+.footer_content .nav_bottom li a {
+    font-family: var(--oswald-font);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--Secondary-color);
+}
+.footer_content .nav_bottom li a:hover {
+    color: #5bc5f4;
+}
+.flickr_photo_bottom {
+    margin-top: 20px;
+}
+.footer_bottom {
+    background-color: #555555;
+    padding: 10px 0px;
+    text-align: center;
+}
+.footer_bottom .footer_content p {
+    font-family: var(--openSans-font);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.footer_bottom .footer_content span a {
+    font-family: var(--openSans-font);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #5bc5f4;
+    text-transform: lowercase;
+}
+/* footer section css design End */
